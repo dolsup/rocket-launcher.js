@@ -74,10 +74,13 @@ var crash = function(rocket) {
 */
 
 // entry point
-fs.readFile('./rocket.txt', 'utf8', function(err, data) {
-    //'＿人人人人人人人人人＿\n＞ ROCKET NOT FOUND ＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣'
-    rocket.lines = data.split('\n');
-    tick(rocket);
+fs.readFile(__diranme + '/rocket.txt', 'utf8', function(err, data) {
+    if(err) {
+        console.error('＿人人人人人人人人人＿\n＞ ROCKET NOT FOUND ＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣');
+    } else {
+        rocket.lines = data.split('\n');
+        tick(rocket);
+    }
     //setInterval(function() {launch(rocket);}, 3500);
 });
 
