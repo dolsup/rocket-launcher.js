@@ -74,7 +74,7 @@ var crash = function(rocket) {
 */
 
 // entry point
-fs.readFile(__diranme + '/rocket.txt', 'utf8', function(err, data) {
+fs.readFile(__dirname + '/rocket.txt', 'utf8', function(err, data) {
     if(err) {
         console.error('＿人人人人人人人人人＿\n＞ ROCKET NOT FOUND ＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣');
     } else {
