@@ -1,0 +1,22 @@
+{
+  "name": "rocket-launcher",
+  "description": "launch your meaningful Node.js app with this ROCKET-LAUNCHER!",
+  "license": "THE BEER-WARE LICENSE (Revision 42)",
+  "author": "dolsup<1890mah@gmail.com>",
+  "version": "1.0.1",
+  "main": "./launcher.js",
+  "repository": {
+      "type": "git",
+      "url": "http://github.com/dolsup/rocket-launcher.js.git"
+  },
+  "keywords": [
+      "error", "log", "rocket", "funny", "geek" 
+  ],
+  "bugs": {
+    "url": "https://github.com/dolsup/rocket-launcher.js/issues"
+  },
+  "homepage": "https://github.com/dolsup/rocket-launcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
