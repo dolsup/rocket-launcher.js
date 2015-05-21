@@ -63,25 +63,31 @@ var bufRocket = function(r) {
     }
 };
 
-// print and clear the screen buffer
+// if not empty, print and clear the screen buffer
 var printBuf = function(bf) {
+    var empty = true;
+    var t = "";
     for(var r=0; r<rows; r++) {
-        var t = "";
         for(var c=0; c<cols; c++) {
-            if(bf[r][c])
+            if(bf[r][c]) {
+                empty = false;
                 t += bf[r][c];
-            else
+            } else {
                 t += ' ';
+            }
             bf[r][c] = null;
         }
-        process.stdout.write(t.toString('utf8')+'\n');
+        t += '\n';
     }    
+    if(!empty)
+        process.stdout.write(t.toString('utf8')+'\n');
 };
 
 
 var tick = function(objs) {
     for(var i=0; i<objs.length; i++) {
         if(objs[i].step > objs[i].lines.length + rows) {
+            // remove object when go outside
             objs.splice(i, 1);
             break;
         }
