@@ -9,6 +9,7 @@
 
 
 var fs = require('fs');
+var figlet = require('figlet');
 
 // variables
 var cols = process.stdout.columns;
@@ -28,6 +29,12 @@ var Rocket = function(fire) {
     this.state = ""; //launched, exploded, crashed
     this.step = 0;
     this.fire = fire;
+};
+
+// figlet text prototype
+var Figlet = function(text, ms) {
+    this.lines = figlet.textSync(text).split('\n');
+    this.life = ms;
 };
 
 
@@ -63,6 +70,14 @@ var bufRocket = function(r) {
     }
 };
 
+var bufFiglet = function(f) {
+    for(var i=0; i<f.lines.length; i++) {
+        for(var j=0; j<f.lines[i].length; j++) {
+            buf[i+2][j] = f.lines[i][j];
+        }
+    }
+};
+
 // if not empty, print and clear the screen buffer
 var printBuf = function(bf) {
     var empty = true;
@@ -86,14 +101,22 @@ var printBuf = function(bf) {
 
 var tick = function(objs) {
     for(var i=0; i<objs.length; i++) {
-        if(objs[i].step > objs[i].lines.length + rows) {
-            // remove object when go outside
-            objs.splice(i, 1);
-            break;
+        if(objs[i] instanceof Figlet) {
+            if(--objs[i].life < 0) {
+                objs.splice(i, 1);
+                break;
+            }
+            bufFiglet(objs[i]);
         }
         if(objs[i] instanceof Rocket) {
+            if(objs[i].step > objs[i].lines.length + rows) {
+                // remove object when go outside
+                objs.splice(i, 1);
+                break;
+            }
             bufRocket(objs[i]);
         }
+        
     }
     printBuf(buf);
     setTimeout(function() {
@@ -115,12 +138,17 @@ var crash = function(rocket) {
     rocket.step = 0;
 }
 */
+var throwErr = function(msg) {
+    console.error('＿人人人人人人人人人＿\n＞ ' + msg + ' ＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣');
+} 
 
 
-var rocketLaunch = function(path, fire) {
+// ---- functions for external access
+
+var LaunchRocket = function(path, fire) {
     fs.readFile((path)?path:(__dirname + '/rocket.txt'), 'utf8', function(err, data) {
         if(err) {
-            console.error('＿人人人人人人人人人＿\n＞ ROCKET NOT FOUND ＜\n￣Y^Y^Y^Y^Y^Y^Y^Y^Y^￣');
+            throwErr('ROCKET NOT FOUND!');
         } else {
             var rocket = new Rocket((fire)?fire:'#');
             rocket.lines = data.split('\n');
@@ -131,9 +159,26 @@ var rocketLaunch = function(path, fire) {
     });
 };
 
+var makeFigletText = function(text, ms) {    
+    var fig = new Figlet(text, ms);
+    objects.push(fig);
+};
+
+var countDown = function(n) {
+    var timer = setInterval(function() {
+        makeFigletText(n--, 16);
+        if(n < 0) {
+            makeFigletText("FIRE", 16);
+            clearInterval(timer);
+        }
+    }, 1000);
+};
+
 // entry point
 tick(objects);
 
 module.exports = {
-    'launch': rocketLaunch
+    'launch': LaunchRocket,
+    'type': makeFigletText,
+    'count': countDown
 };

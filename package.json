@@ -9,6 +9,9 @@
     "type": "git",
     "url": "http://github.com/dolsup/rocket-launcher.js.git"
   },
+  "dependencies": {
+      "figlet": "1.1.0"
+  },
   "keywords": [
     "error",
     "log",

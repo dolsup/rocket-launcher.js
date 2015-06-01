@@ -1,0 +1,643 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   'minor',
+1 verbose cli   '-m',
+1 verbose cli   'add countdown and type function with figlet' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M  launcher.js
+5 verbose stack A  node_modules/figlet/.jshintrc
+5 verbose stack A  node_modules/figlet/.npmignore
+5 verbose stack A  node_modules/figlet/Gruntfile.js
+5 verbose stack A  node_modules/figlet/README.md
+5 verbose stack A  node_modules/figlet/doc/figfont.txt
+5 verbose stack A  node_modules/figlet/examples/front-end/index.htm
+5 verbose stack A  node_modules/figlet/examples/front-end/jquery-1.7.2.min.js
+5 verbose stack A  node_modules/figlet/examples/node/app.js
+5 verbose stack A  node_modules/figlet/fonts/1Row.flf
+5 verbose stack A  node_modules/figlet/fonts/3-D.flf
+5 verbose stack A  "node_modules/figlet/fonts/3D Diagonal.flf"
+5 verbose stack A  node_modules/figlet/fonts/3D-ASCII.flf
+5 verbose stack A  node_modules/figlet/fonts/3x5.flf
+5 verbose stack A  node_modules/figlet/fonts/4Max.flf
+5 verbose stack A  "node_modules/figlet/fonts/5 Line Oblique.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC 3 Line.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC 3 Liv1.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC AAA01.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Neko.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Razor.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Razor2.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Slash.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Slider.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Thin.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Tubes.flf"
+5 verbose stack A  "node_modules/figlet/fonts/AMC Untitled.flf"
+5 verbose stack A  "node_modules/figlet/fonts/ANSI Shadow.flf"
+5 verbose stack A  "node_modules/figlet/fonts/ASCII New Roman.flf"
+5 verbose stack A  node_modules/figlet/fonts/Acrobatic.flf
+5 verbose stack A  node_modules/figlet/fonts/Alligator.flf
+5 verbose stack A  node_modules/figlet/fonts/Alligator2.flf
+5 verbose stack A  node_modules/figlet/fonts/Alpha.flf
+5 verbose stack A  node_modules/figlet/fonts/Alphabet.flf
+5 verbose stack A  node_modules/figlet/fonts/Arrows.flf
+5 verbose stack A  node_modules/figlet/fonts/Avatar.flf
+5 verbose stack A  node_modules/figlet/fonts/B1FF.flf
+5 verbose stack A  node_modules/figlet/fonts/B1FF.php
+5 verbose stack A  node_modules/figlet/fonts/Banner.flf
+5 verbose stack A  node_modules/figlet/fonts/Banner3-D.flf
+5 verbose stack A  node_modules/figlet/fonts/Banner3.flf
+5 verbose stack A  node_modules/figlet/fonts/Banner4.flf
+5 verbose stack A  node_modules/figlet/fonts/Barbwire.flf
+5 verbose stack A  node_modules/figlet/fonts/Basic.flf
+5 verbose stack A  node_modules/figlet/fonts/Bear.flf
+5 verbose stack A  node_modules/figlet/fonts/Bell.flf
+5 verbose stack A  node_modules/figlet/fonts/Benjamin.flf
+5 verbose stack A  "node_modules/figlet/fonts/Big Chief.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Big Money-ne.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Big Money-nw.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Big Money-se.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Big Money-sw.flf"
+5 verbose stack A  node_modules/figlet/fonts/Big.flf
+5 verbose stack A  node_modules/figlet/fonts/Bigfig.flf
+5 verbose stack A  node_modules/figlet/fonts/Binary.flf
+5 verbose stack A  node_modules/figlet/fonts/Block.flf
+5 verbose stack A  node_modules/figlet/fonts/Blocks.flf
+5 verbose stack A  node_modules/figlet/fonts/Bloody.flf
+5 verbose stack A  node_modules/figlet/fonts/Bolger.flf
+5 verbose stack A  node_modules/figlet/fonts/Braced.flf
+5 verbose stack A  node_modules/figlet/fonts/Bright.flf
+5 verbose stack A  "node_modules/figlet/fonts/Broadway KB.flf"
+5 verbose stack A  node_modules/figlet/fonts/Broadway.flf
+5 verbose stack A  node_modules/figlet/fonts/Bubble.flf
+5 verbose stack A  node_modules/figlet/fonts/Bulbhead.flf
+5 verbose stack A  node_modules/figlet/fonts/Caligraphy.flf
+5 verbose stack A  node_modules/figlet/fonts/Caligraphy2.flf
+5 verbose stack A  "node_modules/figlet/fonts/Calvin S.flf"
+5 verbose stack A  node_modules/figlet/fonts/Cards.flf
+5 verbose stack A  node_modules/figlet/fonts/Catwalk.flf
+5 verbose stack A  node_modules/figlet/fonts/Chiseled.flf
+5 verbose stack A  node_modules/figlet/fonts/Chunky.flf
+5 verbose stack A  node_modules/figlet/fonts/Coinstak.flf
+5 verbose stack A  node_modules/figlet/fonts/Cola.flf
+5 verbose stack A  node_modules/figlet/fonts/Colossal.flf
+5 verbose stack A  node_modules/figlet/fonts/Computer.flf
+5 verbose stack A  node_modules/figlet/fonts/Contessa.flf
+5 verbose stack A  node_modules/figlet/fonts/Contrast.flf
+5 verbose stack A  node_modules/figlet/fonts/Cosmike.flf
+5 verbose stack A  node_modules/figlet/fonts/Crawford.flf
+5 verbose stack A  node_modules/figlet/fonts/Crawford2.flf
+5 verbose stack A  node_modules/figlet/fonts/Crazy.flf
+5 verbose stack A  node_modules/figlet/fonts/Cricket.flf
+5 verbose stack A  node_modules/figlet/fonts/Cursive.flf
+5 verbose stack A  node_modules/figlet/fonts/Cyberlarge.flf
+5 verbose stack A  node_modules/figlet/fonts/Cybermedium.flf
+5 verbose stack A  node_modules/figlet/fonts/Cybersmall.flf
+5 verbose stack A  node_modules/figlet/fonts/Cygnet.flf
+5 verbose stack A  node_modules/figlet/fonts/DANC4.flf
+5 verbose stack A  node_modules/figlet/fonts/DWhistled.flf
+5 verbose stack A  "node_modules/figlet/fonts/Dancing Font.flf"
+5 verbose stack A  node_modules/figlet/fonts/Decimal.flf
+5 verbose stack A  "node_modules/figlet/fonts/Def Leppard.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Delta Corps Priest 1.flf"
+5 verbose stack A  node_modules/figlet/fonts/Diamond.flf
+5 verbose stack A  "node_modules/figlet/fonts/Diet Cola.flf"
+5 verbose stack A  node_modules/figlet/fonts/Digital.flf
+5 verbose stack A  node_modules/figlet/fonts/Doh.flf
+5 verbose stack A  node_modules/figlet/fonts/Doom.flf
+5 verbose stack A  "node_modules/figlet/fonts/Dot Matrix.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Double Shorts.flf"
+5 verbose stack A  node_modules/figlet/fonts/Double.flf
+5 verbose stack A  "node_modules/figlet/fonts/Dr Pepper.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Chess.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Font.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Italic.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Piti.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Robot.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Wall.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Efti Water.flf"
+5 verbose stack A  node_modules/figlet/fonts/Electronic.flf
+5 verbose stack A  node_modules/figlet/fonts/Elite.flf
+5 verbose stack A  node_modules/figlet/fonts/Epic.flf
+5 verbose stack A  node_modules/figlet/fonts/Fender.flf
+5 verbose stack A  node_modules/figlet/fonts/Filter.flf
+5 verbose stack A  "node_modules/figlet/fonts/Fire Font-k.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Fire Font-s.flf"
+5 verbose stack A  node_modules/figlet/fonts/Flipped.flf
+5 verbose stack A  "node_modules/figlet/fonts/Flower Power.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Four Tops.flf"
+5 verbose stack A  node_modules/figlet/fonts/Fraktur.flf
+5 verbose stack A  "node_modules/figlet/fonts/Fun Face.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Fun Faces.flf"
+5 verbose stack A  node_modules/figlet/fonts/Fuzzy.flf
+5 verbose stack A  node_modules/figlet/fonts/Georgi16.flf
+5 verbose stack A  node_modules/figlet/fonts/Georgia11.flf
+5 verbose stack A  node_modules/figlet/fonts/Ghost.flf
+5 verbose stack A  node_modules/figlet/fonts/Ghoulish.flf
+5 verbose stack A  node_modules/figlet/fonts/Glenyn.flf
+5 verbose stack A  node_modules/figlet/fonts/Goofy.flf
+5 verbose stack A  node_modules/figlet/fonts/Gothic.flf
+5 verbose stack A  node_modules/figlet/fonts/Graceful.flf
+5 verbose stack A  node_modules/figlet/fonts/Gradient.flf
+5 verbose stack A  node_modules/figlet/fonts/Graffiti.flf
+5 verbose stack A  node_modules/figlet/fonts/Greek.flf
+5 verbose stack A  "node_modules/figlet/fonts/Heart Left.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Heart Right.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Henry 3D.flf"
+5 verbose stack A  node_modules/figlet/fonts/Hex.flf
+5 verbose stack A  node_modules/figlet/fonts/Hieroglyphs.flf
+5 verbose stack A  node_modules/figlet/fonts/Hollywood.flf
+5 verbose stack A  "node_modules/figlet/fonts/Horizontal Left.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Horizontal Right.flf"
+5 verbose stack A  node_modules/figlet/fonts/ICL-1900.flf
+5 verbose stack A  node_modules/figlet/fonts/Impossible.flf
+5 verbose stack A  node_modules/figlet/fonts/Invita.flf
+5 verbose stack A  node_modules/figlet/fonts/Isometric1.flf
+5 verbose stack A  node_modules/figlet/fonts/Isometric2.flf
+5 verbose stack A  node_modules/figlet/fonts/Isometric3.flf
+5 verbose stack A  node_modules/figlet/fonts/Isometric4.flf
+5 verbose stack A  node_modules/figlet/fonts/Italic.flf
+5 verbose stack A  node_modules/figlet/fonts/Ivrit.flf
+5 verbose stack A  "node_modules/figlet/fonts/JS Block Letters.flf"
+5 verbose stack A  "node_modules/figlet/fonts/JS Bracket Letters.flf"
+5 verbose stack A  "node_modules/figlet/fonts/JS Capital Curves.flf"
+5 verbose stack A  "node_modules/figlet/fonts/JS Cursive.flf"
+5 verbose stack A  "node_modules/figlet/fonts/JS Stick Letters.flf"
+5 verbose stack A  node_modules/figlet/fonts/Jacky.flf
+5 verbose stack A  node_modules/figlet/fonts/Jazmine.flf
+5 verbose stack A  node_modules/figlet/fonts/Jerusalem.flf
+5 verbose stack A  node_modules/figlet/fonts/Katakana.flf
+5 verbose stack A  node_modules/figlet/fonts/Kban.flf
+5 verbose stack A  node_modules/figlet/fonts/Keyboard.flf
+5 verbose stack A  node_modules/figlet/fonts/Knob.flf
+5 verbose stack A  "node_modules/figlet/fonts/Konto Slant.flf"
+5 verbose stack A  node_modules/figlet/fonts/Konto.flf
+5 verbose stack A  node_modules/figlet/fonts/LCD.flf
+5 verbose stack A  "node_modules/figlet/fonts/Larry 3D 2.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Larry 3D.flf"
+5 verbose stack A  node_modules/figlet/fonts/Lean.flf
+5 verbose stack A  node_modules/figlet/fonts/Letters.flf
+5 verbose stack A  "node_modules/figlet/fonts/Lil Devil.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Line Blocks.flf"
+5 verbose stack A  node_modules/figlet/fonts/Linux.flf
+5 verbose stack A  node_modules/figlet/fonts/Lockergnome.flf
+5 verbose stack A  node_modules/figlet/fonts/Madrid.flf
+5 verbose stack A  node_modules/figlet/fonts/Marquee.flf
+5 verbose stack A  node_modules/figlet/fonts/Maxfour.flf
+5 verbose stack A  node_modules/figlet/fonts/Merlin1.flf
+5 verbose stack A  node_modules/figlet/fonts/Merlin2.flf
+5 verbose stack A  node_modules/figlet/fonts/Mike.flf
+5 verbose stack A  node_modules/figlet/fonts/Mini.flf
+5 verbose stack A  node_modules/figlet/fonts/Mirror.flf
+5 verbose stack A  node_modules/figlet/fonts/Mnemonic.flf
+5 verbose stack A  node_modules/figlet/fonts/Modular.flf
+5 verbose stack A  node_modules/figlet/fonts/Morse.flf
+5 verbose stack A  node_modules/figlet/fonts/Morse2.flf
+5 verbose stack A  node_modules/figlet/fonts/Moscow.flf
+5 verbose stack A  node_modules/figlet/fonts/Mshebrew210.flf
+5 verbose stack A  node_modules/figlet/fonts/Muzzle.flf
+5 verbose stack A  node_modules/figlet/fonts/NScript.flf
+5 verbose stack A  "node_modules/figlet/fonts/NT Greek.flf"
+5 verbose stack A  "node_modules/figlet/fonts/NV Script.flf"
+5 verbose stack A  node_modules/figlet/fonts/Nancyj-Fancy.flf
+5 verbose stack A  node_modules/figlet/fonts/Nancyj-Improved.flf
+5 verbose stack A  node_modules/figlet/fonts/Nancyj-Underlined.flf
+5 verbose stack A  node_modules/figlet/fonts/Nancyj.flf
+5 verbose stack A  node_modules/figlet/fonts/Nipples.flf
+5 verbose stack A  node_modules/figlet/fonts/O8.flf
+5 verbose stack A  node_modules/figlet/fonts/OS2.flf
+5 verbose stack A  node_modules/figlet/fonts/Octal.flf
+5 verbose stack A  node_modules/figlet/fonts/Ogre.flf
+5 verbose stack A  "node_modules/figlet/fonts/Old Banner.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Patorjk's Cheese.flf"
+5 verbose stack A  node_modules/figlet/fonts/Patorjk-HeX.flf
+5 verbose stack A  node_modules/figlet/fonts/Pawp.flf
+5 verbose stack A  "node_modules/figlet/fonts/Peaks Slant.flf"
+5 verbose stack A  node_modules/figlet/fonts/Peaks.flf
+5 verbose stack A  node_modules/figlet/fonts/Pebbles.flf
+5 verbose stack A  node_modules/figlet/fonts/Pepper.flf
+5 verbose stack A  node_modules/figlet/fonts/Poison.flf
+5 verbose stack A  node_modules/figlet/fonts/Puffy.flf
+5 verbose stack A  node_modules/figlet/fonts/Puzzle.flf
+5 verbose stack A  node_modules/figlet/fonts/Pyramid.flf
+5 verbose stack A  node_modules/figlet/fonts/Rammstein.flf
+5 verbose stack A  node_modules/figlet/fonts/Rectangles.flf
+5 verbose stack A  "node_modules/figlet/fonts/Red Phoenix.flf"
+5 verbose stack A  node_modules/figlet/fonts/Relief.flf
+5 verbose stack A  node_modules/figlet/fonts/Relief2.flf
+5 verbose stack A  node_modules/figlet/fonts/Reverse.flf
+5 verbose stack A  node_modules/figlet/fonts/Roman.flf
+5 verbose stack A  node_modules/figlet/fonts/Rot13.flf
+5 verbose stack A  node_modules/figlet/fonts/Rot13.php
+5 verbose stack A  node_modules/figlet/fonts/Rotated.flf
+5 verbose stack A  node_modules/figlet/fonts/Rounded.flf
+5 verbose stack A  "node_modules/figlet/fonts/Rowan Cap.flf"
+5 verbose stack A  node_modules/figlet/fonts/Rozzo.flf
+5 verbose stack A  node_modules/figlet/fonts/Runic.flf
+5 verbose stack A  node_modules/figlet/fonts/Runyc.flf
+5 verbose stack A  "node_modules/figlet/fonts/S Blood.flf"
+5 verbose stack A  "node_modules/figlet/fonts/SL Script.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Santa Clara.flf"
+5 verbose stack A  node_modules/figlet/fonts/Script.flf
+5 verbose stack A  node_modules/figlet/fonts/Serifcap.flf
+5 verbose stack A  node_modules/figlet/fonts/Shadow.flf
+5 verbose stack A  node_modules/figlet/fonts/Shimrod.flf
+5 verbose stack A  node_modules/figlet/fonts/Short.flf
+5 verbose stack A  "node_modules/figlet/fonts/Slant Relief.flf"
+5 verbose stack A  node_modules/figlet/fonts/Slant.flf
+5 verbose stack A  node_modules/figlet/fonts/Slide.flf
+5 verbose stack A  "node_modules/figlet/fonts/Small Caps.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Isometric1.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Keyboard.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Poison.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Script.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Shadow.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Slant.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Small Tengwar.flf"
+5 verbose stack A  node_modules/figlet/fonts/Small.flf
+5 verbose stack A  node_modules/figlet/fonts/Soft.flf
+5 verbose stack A  node_modules/figlet/fonts/Speed.flf
+5 verbose stack A  node_modules/figlet/fonts/Spliff.flf
+5 verbose stack A  node_modules/figlet/fonts/Stacey.flf
+5 verbose stack A  node_modules/figlet/fonts/Stampate.flf
+5 verbose stack A  node_modules/figlet/fonts/Stampatello.flf
+5 verbose stack A  node_modules/figlet/fonts/Standard.flf
+5 verbose stack A  "node_modules/figlet/fonts/Star Strips.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Star Wars.flf"
+5 verbose stack A  node_modules/figlet/fonts/Stellar.flf
+5 verbose stack A  node_modules/figlet/fonts/Stforek.flf
+5 verbose stack A  "node_modules/figlet/fonts/Stick Letters.flf"
+5 verbose stack A  node_modules/figlet/fonts/Stop.flf
+5 verbose stack A  node_modules/figlet/fonts/Straight.flf
+5 verbose stack A  "node_modules/figlet/fonts/Stronger Than All.flf"
+5 verbose stack A  node_modules/figlet/fonts/Sub-Zero.flf
+5 verbose stack A  "node_modules/figlet/fonts/Swamp Land.flf"
+5 verbose stack A  node_modules/figlet/fonts/Swan.flf
+5 verbose stack A  node_modules/figlet/fonts/Sweet.flf
+5 verbose stack A  node_modules/figlet/fonts/THIS.flf
+5 verbose stack A  node_modules/figlet/fonts/Tanja.flf
+5 verbose stack A  node_modules/figlet/fonts/Tengwar.flf
+5 verbose stack A  node_modules/figlet/fonts/Term.flf
+5 verbose stack A  node_modules/figlet/fonts/Test1.flf
+5 verbose stack A  "node_modules/figlet/fonts/The Edge.flf"
+5 verbose stack A  node_modules/figlet/fonts/Thick.flf
+5 verbose stack A  node_modules/figlet/fonts/Thin.flf
+5 verbose stack A  node_modules/figlet/fonts/Thorned.flf
+5 verbose stack A  "node_modules/figlet/fonts/Three Point.flf"
+5 verbose stack A  "node_modules/figlet/fonts/Ticks Slant.flf"
+5 verbose stack A  node_modules/figlet/fonts/Ticks.flf
+5 verbose stack A  node_modules/figlet/fonts/Tiles.flf
+5 verbose stack A  node_modules/figlet/fonts/Tinker-Toy.flf
+5 verbose stack A  node_modules/figlet/fonts/Tombstone.flf
+5 verbose stack A  node_modules/figlet/fonts/Train.flf
+5 verbose stack A  node_modules/figlet/fonts/Trek.flf
+5 verbose stack A  node_modules/figlet/fonts/Tsalagi.flf
+5 verbose stack A  node_modules/figlet/fonts/Tubular.flf
+5 verbose stack A  node_modules/figlet/fonts/Twisted.flf
+5 verbose stack A  "node_modules/figlet/fonts/Two Point.flf"
+5 verbose stack A  "node_modules/figlet/fonts/USA Flag.flf"
+5 verbose stack A  node_modules/figlet/fonts/Univers.flf
+5 verbose stack A  node_modules/figlet/fonts/Varsity.flf
+5 verbose stack A  node_modules/figlet/fonts/Wavy.flf
+5 verbose stack A  node_modules/figlet/fonts/Weird.flf
+5 verbose stack A  "node_modules/figlet/fonts/Wet Letter.flf"
+5 verbose stack A  node_modules/figlet/fonts/Whimsy.flf
+5 verbose stack A  node_modules/figlet/fonts/Wow.flf
+5 verbose stack A  node_modules/figlet/lib/figlet.js
+5 verbose stack A  node_modules/figlet/lib/node-figlet.js
+5 verbose stack A  node_modules/figlet/package.json
+5 verbose stack A  node_modules/figlet/test.js
+5 verbose stack A  node_modules/figlet/test/expected/dancingFont
+5 verbose stack A  node_modules/figlet/test/expected/graffiti
+5 verbose stack A  node_modules/figlet/test/expected/standard
+5 verbose stack A  node_modules/figlet/test/figlet_test.js
+5 verbose stack A  npm-debug.log
+5 verbose stack M  package.json
+5 verbose stack M  test.js
+5 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:138:37
+5 verbose stack     at ChildProcess.exithandler (child_process.js:742:7)
+5 verbose stack     at ChildProcess.emit (events.js:110:17)
+5 verbose stack     at maybeClose (child_process.js:1015:16)
+5 verbose stack     at Socket.<anonymous> (child_process.js:1183:11)
+5 verbose stack     at Socket.emit (events.js:107:17)
+5 verbose stack     at Pipe.close (net.js:485:12)
+6 verbose cwd /Users/choijiwon/dev/rocket-launcher
+7 error Darwin 14.3.0
+8 error argv "node" "/usr/local/bin/npm" "version" "minor" "-m" "add countdown and type function with figlet"
+9 error node v0.12.4
+10 error npm  v2.10.1
+11 error Git working directory not clean.
+11 error M  launcher.js
+11 error A  node_modules/figlet/.jshintrc
+11 error A  node_modules/figlet/.npmignore
+11 error A  node_modules/figlet/Gruntfile.js
+11 error A  node_modules/figlet/README.md
+11 error A  node_modules/figlet/doc/figfont.txt
+11 error A  node_modules/figlet/examples/front-end/index.htm
+11 error A  node_modules/figlet/examples/front-end/jquery-1.7.2.min.js
+11 error A  node_modules/figlet/examples/node/app.js
+11 error A  node_modules/figlet/fonts/1Row.flf
+11 error A  node_modules/figlet/fonts/3-D.flf
+11 error A  "node_modules/figlet/fonts/3D Diagonal.flf"
+11 error A  node_modules/figlet/fonts/3D-ASCII.flf
+11 error A  node_modules/figlet/fonts/3x5.flf
+11 error A  node_modules/figlet/fonts/4Max.flf
+11 error A  "node_modules/figlet/fonts/5 Line Oblique.flf"
+11 error A  "node_modules/figlet/fonts/AMC 3 Line.flf"
+11 error A  "node_modules/figlet/fonts/AMC 3 Liv1.flf"
+11 error A  "node_modules/figlet/fonts/AMC AAA01.flf"
+11 error A  "node_modules/figlet/fonts/AMC Neko.flf"
+11 error A  "node_modules/figlet/fonts/AMC Razor.flf"
+11 error A  "node_modules/figlet/fonts/AMC Razor2.flf"
+11 error A  "node_modules/figlet/fonts/AMC Slash.flf"
+11 error A  "node_modules/figlet/fonts/AMC Slider.flf"
+11 error A  "node_modules/figlet/fonts/AMC Thin.flf"
+11 error A  "node_modules/figlet/fonts/AMC Tubes.flf"
+11 error A  "node_modules/figlet/fonts/AMC Untitled.flf"
+11 error A  "node_modules/figlet/fonts/ANSI Shadow.flf"
+11 error A  "node_modules/figlet/fonts/ASCII New Roman.flf"
+11 error A  node_modules/figlet/fonts/Acrobatic.flf
+11 error A  node_modules/figlet/fonts/Alligator.flf
+11 error A  node_modules/figlet/fonts/Alligator2.flf
+11 error A  node_modules/figlet/fonts/Alpha.flf
+11 error A  node_modules/figlet/fonts/Alphabet.flf
+11 error A  node_modules/figlet/fonts/Arrows.flf
+11 error A  node_modules/figlet/fonts/Avatar.flf
+11 error A  node_modules/figlet/fonts/B1FF.flf
+11 error A  node_modules/figlet/fonts/B1FF.php
+11 error A  node_modules/figlet/fonts/Banner.flf
+11 error A  node_modules/figlet/fonts/Banner3-D.flf
+11 error A  node_modules/figlet/fonts/Banner3.flf
+11 error A  node_modules/figlet/fonts/Banner4.flf
+11 error A  node_modules/figlet/fonts/Barbwire.flf
+11 error A  node_modules/figlet/fonts/Basic.flf
+11 error A  node_modules/figlet/fonts/Bear.flf
+11 error A  node_modules/figlet/fonts/Bell.flf
+11 error A  node_modules/figlet/fonts/Benjamin.flf
+11 error A  "node_modules/figlet/fonts/Big Chief.flf"
+11 error A  "node_modules/figlet/fonts/Big Money-ne.flf"
+11 error A  "node_modules/figlet/fonts/Big Money-nw.flf"
+11 error A  "node_modules/figlet/fonts/Big Money-se.flf"
+11 error A  "node_modules/figlet/fonts/Big Money-sw.flf"
+11 error A  node_modules/figlet/fonts/Big.flf
+11 error A  node_modules/figlet/fonts/Bigfig.flf
+11 error A  node_modules/figlet/fonts/Binary.flf
+11 error A  node_modules/figlet/fonts/Block.flf
+11 error A  node_modules/figlet/fonts/Blocks.flf
+11 error A  node_modules/figlet/fonts/Bloody.flf
+11 error A  node_modules/figlet/fonts/Bolger.flf
+11 error A  node_modules/figlet/fonts/Braced.flf
+11 error A  node_modules/figlet/fonts/Bright.flf
+11 error A  "node_modules/figlet/fonts/Broadway KB.flf"
+11 error A  node_modules/figlet/fonts/Broadway.flf
+11 error A  node_modules/figlet/fonts/Bubble.flf
+11 error A  node_modules/figlet/fonts/Bulbhead.flf
+11 error A  node_modules/figlet/fonts/Caligraphy.flf
+11 error A  node_modules/figlet/fonts/Caligraphy2.flf
+11 error A  "node_modules/figlet/fonts/Calvin S.flf"
+11 error A  node_modules/figlet/fonts/Cards.flf
+11 error A  node_modules/figlet/fonts/Catwalk.flf
+11 error A  node_modules/figlet/fonts/Chiseled.flf
+11 error A  node_modules/figlet/fonts/Chunky.flf
+11 error A  node_modules/figlet/fonts/Coinstak.flf
+11 error A  node_modules/figlet/fonts/Cola.flf
+11 error A  node_modules/figlet/fonts/Colossal.flf
+11 error A  node_modules/figlet/fonts/Computer.flf
+11 error A  node_modules/figlet/fonts/Contessa.flf
+11 error A  node_modules/figlet/fonts/Contrast.flf
+11 error A  node_modules/figlet/fonts/Cosmike.flf
+11 error A  node_modules/figlet/fonts/Crawford.flf
+11 error A  node_modules/figlet/fonts/Crawford2.flf
+11 error A  node_modules/figlet/fonts/Crazy.flf
+11 error A  node_modules/figlet/fonts/Cricket.flf
+11 error A  node_modules/figlet/fonts/Cursive.flf
+11 error A  node_modules/figlet/fonts/Cyberlarge.flf
+11 error A  node_modules/figlet/fonts/Cybermedium.flf
+11 error A  node_modules/figlet/fonts/Cybersmall.flf
+11 error A  node_modules/figlet/fonts/Cygnet.flf
+11 error A  node_modules/figlet/fonts/DANC4.flf
+11 error A  node_modules/figlet/fonts/DWhistled.flf
+11 error A  "node_modules/figlet/fonts/Dancing Font.flf"
+11 error A  node_modules/figlet/fonts/Decimal.flf
+11 error A  "node_modules/figlet/fonts/Def Leppard.flf"
+11 error A  "node_modules/figlet/fonts/Delta Corps Priest 1.flf"
+11 error A  node_modules/figlet/fonts/Diamond.flf
+11 error A  "node_modules/figlet/fonts/Diet Cola.flf"
+11 error A  node_modules/figlet/fonts/Digital.flf
+11 error A  node_modules/figlet/fonts/Doh.flf
+11 error A  node_modules/figlet/fonts/Doom.flf
+11 error A  "node_modules/figlet/fonts/Dot Matrix.flf"
+11 error A  "node_modules/figlet/fonts/Double Shorts.flf"
+11 error A  node_modules/figlet/fonts/Double.flf
+11 error A  "node_modules/figlet/fonts/Dr Pepper.flf"
+11 error A  "node_modules/figlet/fonts/Efti Chess.flf"
+11 error A  "node_modules/figlet/fonts/Efti Font.flf"
+11 error A  "node_modules/figlet/fonts/Efti Italic.flf"
+11 error A  "node_modules/figlet/fonts/Efti Piti.flf"
+11 error A  "node_modules/figlet/fonts/Efti Robot.flf"
+11 error A  "node_modules/figlet/fonts/Efti Wall.flf"
+11 error A  "node_modules/figlet/fonts/Efti Water.flf"
+11 error A  node_modules/figlet/fonts/Electronic.flf
+11 error A  node_modules/figlet/fonts/Elite.flf
+11 error A  node_modules/figlet/fonts/Epic.flf
+11 error A  node_modules/figlet/fonts/Fender.flf
+11 error A  node_modules/figlet/fonts/Filter.flf
+11 error A  "node_modules/figlet/fonts/Fire Font-k.flf"
+11 error A  "node_modules/figlet/fonts/Fire Font-s.flf"
+11 error A  node_modules/figlet/fonts/Flipped.flf
+11 error A  "node_modules/figlet/fonts/Flower Power.flf"
+11 error A  "node_modules/figlet/fonts/Four Tops.flf"
+11 error A  node_modules/figlet/fonts/Fraktur.flf
+11 error A  "node_modules/figlet/fonts/Fun Face.flf"
+11 error A  "node_modules/figlet/fonts/Fun Faces.flf"
+11 error A  node_modules/figlet/fonts/Fuzzy.flf
+11 error A  node_modules/figlet/fonts/Georgi16.flf
+11 error A  node_modules/figlet/fonts/Georgia11.flf
+11 error A  node_modules/figlet/fonts/Ghost.flf
+11 error A  node_modules/figlet/fonts/Ghoulish.flf
+11 error A  node_modules/figlet/fonts/Glenyn.flf
+11 error A  node_modules/figlet/fonts/Goofy.flf
+11 error A  node_modules/figlet/fonts/Gothic.flf
+11 error A  node_modules/figlet/fonts/Graceful.flf
+11 error A  node_modules/figlet/fonts/Gradient.flf
+11 error A  node_modules/figlet/fonts/Graffiti.flf
+11 error A  node_modules/figlet/fonts/Greek.flf
+11 error A  "node_modules/figlet/fonts/Heart Left.flf"
+11 error A  "node_modules/figlet/fonts/Heart Right.flf"
+11 error A  "node_modules/figlet/fonts/Henry 3D.flf"
+11 error A  node_modules/figlet/fonts/Hex.flf
+11 error A  node_modules/figlet/fonts/Hieroglyphs.flf
+11 error A  node_modules/figlet/fonts/Hollywood.flf
+11 error A  "node_modules/figlet/fonts/Horizontal Left.flf"
+11 error A  "node_modules/figlet/fonts/Horizontal Right.flf"
+11 error A  node_modules/figlet/fonts/ICL-1900.flf
+11 error A  node_modules/figlet/fonts/Impossible.flf
+11 error A  node_modules/figlet/fonts/Invita.flf
+11 error A  node_modules/figlet/fonts/Isometric1.flf
+11 error A  node_modules/figlet/fonts/Isometric2.flf
+11 error A  node_modules/figlet/fonts/Isometric3.flf
+11 error A  node_modules/figlet/fonts/Isometric4.flf
+11 error A  node_modules/figlet/fonts/Italic.flf
+11 error A  node_modules/figlet/fonts/Ivrit.flf
+11 error A  "node_modules/figlet/fonts/JS Block Letters.flf"
+11 error A  "node_modules/figlet/fonts/JS Bracket Letters.flf"
+11 error A  "node_modules/figlet/fonts/JS Capital Curves.flf"
+11 error A  "node_modules/figlet/fonts/JS Cursive.flf"
+11 error A  "node_modules/figlet/fonts/JS Stick Letters.flf"
+11 error A  node_modules/figlet/fonts/Jacky.flf
+11 error A  node_modules/figlet/fonts/Jazmine.flf
+11 error A  node_modules/figlet/fonts/Jerusalem.flf
+11 error A  node_modules/figlet/fonts/Katakana.flf
+11 error A  node_modules/figlet/fonts/Kban.flf
+11 error A  node_modules/figlet/fonts/Keyboard.flf
+11 error A  node_modules/figlet/fonts/Knob.flf
+11 error A  "node_modules/figlet/fonts/Konto Slant.flf"
+11 error A  node_modules/figlet/fonts/Konto.flf
+11 error A  node_modules/figlet/fonts/LCD.flf
+11 error A  "node_modules/figlet/fonts/Larry 3D 2.flf"
+11 error A  "node_modules/figlet/fonts/Larry 3D.flf"
+11 error A  node_modules/figlet/fonts/Lean.flf
+11 error A  node_modules/figlet/fonts/Letters.flf
+11 error A  "node_modules/figlet/fonts/Lil Devil.flf"
+11 error A  "node_modules/figlet/fonts/Line Blocks.flf"
+11 error A  node_modules/figlet/fonts/Linux.flf
+11 error A  node_modules/figlet/fonts/Lockergnome.flf
+11 error A  node_modules/figlet/fonts/Madrid.flf
+11 error A  node_modules/figlet/fonts/Marquee.flf
+11 error A  node_modules/figlet/fonts/Maxfour.flf
+11 error A  node_modules/figlet/fonts/Merlin1.flf
+11 error A  node_modules/figlet/fonts/Merlin2.flf
+11 error A  node_modules/figlet/fonts/Mike.flf
+11 error A  node_modules/figlet/fonts/Mini.flf
+11 error A  node_modules/figlet/fonts/Mirror.flf
+11 error A  node_modules/figlet/fonts/Mnemonic.flf
+11 error A  node_modules/figlet/fonts/Modular.flf
+11 error A  node_modules/figlet/fonts/Morse.flf
+11 error A  node_modules/figlet/fonts/Morse2.flf
+11 error A  node_modules/figlet/fonts/Moscow.flf
+11 error A  node_modules/figlet/fonts/Mshebrew210.flf
+11 error A  node_modules/figlet/fonts/Muzzle.flf
+11 error A  node_modules/figlet/fonts/NScript.flf
+11 error A  "node_modules/figlet/fonts/NT Greek.flf"
+11 error A  "node_modules/figlet/fonts/NV Script.flf"
+11 error A  node_modules/figlet/fonts/Nancyj-Fancy.flf
+11 error A  node_modules/figlet/fonts/Nancyj-Improved.flf
+11 error A  node_modules/figlet/fonts/Nancyj-Underlined.flf
+11 error A  node_modules/figlet/fonts/Nancyj.flf
+11 error A  node_modules/figlet/fonts/Nipples.flf
+11 error A  node_modules/figlet/fonts/O8.flf
+11 error A  node_modules/figlet/fonts/OS2.flf
+11 error A  node_modules/figlet/fonts/Octal.flf
+11 error A  node_modules/figlet/fonts/Ogre.flf
+11 error A  "node_modules/figlet/fonts/Old Banner.flf"
+11 error A  "node_modules/figlet/fonts/Patorjk's Cheese.flf"
+11 error A  node_modules/figlet/fonts/Patorjk-HeX.flf
+11 error A  node_modules/figlet/fonts/Pawp.flf
+11 error A  "node_modules/figlet/fonts/Peaks Slant.flf"
+11 error A  node_modules/figlet/fonts/Peaks.flf
+11 error A  node_modules/figlet/fonts/Pebbles.flf
+11 error A  node_modules/figlet/fonts/Pepper.flf
+11 error A  node_modules/figlet/fonts/Poison.flf
+11 error A  node_modules/figlet/fonts/Puffy.flf
+11 error A  node_modules/figlet/fonts/Puzzle.flf
+11 error A  node_modules/figlet/fonts/Pyramid.flf
+11 error A  node_modules/figlet/fonts/Rammstein.flf
+11 error A  node_modules/figlet/fonts/Rectangles.flf
+11 error A  "node_modules/figlet/fonts/Red Phoenix.flf"
+11 error A  node_modules/figlet/fonts/Relief.flf
+11 error A  node_modules/figlet/fonts/Relief2.flf
+11 error A  node_modules/figlet/fonts/Reverse.flf
+11 error A  node_modules/figlet/fonts/Roman.flf
+11 error A  node_modules/figlet/fonts/Rot13.flf
+11 error A  node_modules/figlet/fonts/Rot13.php
+11 error A  node_modules/figlet/fonts/Rotated.flf
+11 error A  node_modules/figlet/fonts/Rounded.flf
+11 error A  "node_modules/figlet/fonts/Rowan Cap.flf"
+11 error A  node_modules/figlet/fonts/Rozzo.flf
+11 error A  node_modules/figlet/fonts/Runic.flf
+11 error A  node_modules/figlet/fonts/Runyc.flf
+11 error A  "node_modules/figlet/fonts/S Blood.flf"
+11 error A  "node_modules/figlet/fonts/SL Script.flf"
+11 error A  "node_modules/figlet/fonts/Santa Clara.flf"
+11 error A  node_modules/figlet/fonts/Script.flf
+11 error A  node_modules/figlet/fonts/Serifcap.flf
+11 error A  node_modules/figlet/fonts/Shadow.flf
+11 error A  node_modules/figlet/fonts/Shimrod.flf
+11 error A  node_modules/figlet/fonts/Short.flf
+11 error A  "node_modules/figlet/fonts/Slant Relief.flf"
+11 error A  node_modules/figlet/fonts/Slant.flf
+11 error A  node_modules/figlet/fonts/Slide.flf
+11 error A  "node_modules/figlet/fonts/Small Caps.flf"
+11 error A  "node_modules/figlet/fonts/Small Isometric1.flf"
+11 error A  "node_modules/figlet/fonts/Small Keyboard.flf"
+11 error A  "node_modules/figlet/fonts/Small Poison.flf"
+11 error A  "node_modules/figlet/fonts/Small Script.flf"
+11 error A  "node_modules/figlet/fonts/Small Shadow.flf"
+11 error A  "node_modules/figlet/fonts/Small Slant.flf"
+11 error A  "node_modules/figlet/fonts/Small Tengwar.flf"
+11 error A  node_modules/figlet/fonts/Small.flf
+11 error A  node_modules/figlet/fonts/Soft.flf
+11 error A  node_modules/figlet/fonts/Speed.flf
+11 error A  node_modules/figlet/fonts/Spliff.flf
+11 error A  node_modules/figlet/fonts/Stacey.flf
+11 error A  node_modules/figlet/fonts/Stampate.flf
+11 error A  node_modules/figlet/fonts/Stampatello.flf
+11 error A  node_modules/figlet/fonts/Standard.flf
+11 error A  "node_modules/figlet/fonts/Star Strips.flf"
+11 error A  "node_modules/figlet/fonts/Star Wars.flf"
+11 error A  node_modules/figlet/fonts/Stellar.flf
+11 error A  node_modules/figlet/fonts/Stforek.flf
+11 error A  "node_modules/figlet/fonts/Stick Letters.flf"
+11 error A  node_modules/figlet/fonts/Stop.flf
+11 error A  node_modules/figlet/fonts/Straight.flf
+11 error A  "node_modules/figlet/fonts/Stronger Than All.flf"
+11 error A  node_modules/figlet/fonts/Sub-Zero.flf
+11 error A  "node_modules/figlet/fonts/Swamp Land.flf"
+11 error A  node_modules/figlet/fonts/Swan.flf
+11 error A  node_modules/figlet/fonts/Sweet.flf
+11 error A  node_modules/figlet/fonts/THIS.flf
+11 error A  node_modules/figlet/fonts/Tanja.flf
+11 error A  node_modules/figlet/fonts/Tengwar.flf
+11 error A  node_modules/figlet/fonts/Term.flf
+11 error A  node_modules/figlet/fonts/Test1.flf
+11 error A  "node_modules/figlet/fonts/The Edge.flf"
+11 error A  node_modules/figlet/fonts/Thick.flf
+11 error A  node_modules/figlet/fonts/Thin.flf
+11 error A  node_modules/figlet/fonts/Thorned.flf
+11 error A  "node_modules/figlet/fonts/Three Point.flf"
+11 error A  "node_modules/figlet/fonts/Ticks Slant.flf"
+11 error A  node_modules/figlet/fonts/Ticks.flf
+11 error A  node_modules/figlet/fonts/Tiles.flf
+11 error A  node_modules/figlet/fonts/Tinker-Toy.flf
+11 error A  node_modules/figlet/fonts/Tombstone.flf
+11 error A  node_modules/figlet/fonts/Train.flf
+11 error A  node_modules/figlet/fonts/Trek.flf
+11 error A  node_modules/figlet/fonts/Tsalagi.flf
+11 error A  node_modules/figlet/fonts/Tubular.flf
+11 error A  node_modules/figlet/fonts/Twisted.flf
+11 error A  "node_modules/figlet/fonts/Two Point.flf"
+11 error A  "node_modules/figlet/fonts/USA Flag.flf"
+11 error A  node_modules/figlet/fonts/Univers.flf
+11 error A  node_modules/figlet/fonts/Varsity.flf
+11 error A  node_modules/figlet/fonts/Wavy.flf
+11 error A  node_modules/figlet/fonts/Weird.flf
+11 error A  "node_modules/figlet/fonts/Wet Letter.flf"
+11 error A  node_modules/figlet/fonts/Whimsy.flf
+11 error A  node_modules/figlet/fonts/Wow.flf
+11 error A  node_modules/figlet/lib/figlet.js
+11 error A  node_modules/figlet/lib/node-figlet.js
+11 error A  node_modules/figlet/package.json
+11 error A  node_modules/figlet/test.js
+11 error A  node_modules/figlet/test/expected/dancingFont
+11 error A  node_modules/figlet/test/expected/graffiti
+11 error A  node_modules/figlet/test/expected/standard
+11 error A  node_modules/figlet/test/figlet_test.js
+11 error A  npm-debug.log
+11 error M  package.json
+11 error M  test.js
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
