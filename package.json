@@ -3,7 +3,7 @@
   "description": "launch your meaningful Node.js app with this ROCKET-LAUNCHER!",
   "license": "THE BEER-WARE LICENSE (Revision 42)",
   "author": "dolsup<1890mah@gmail.com>",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "./launcher.js",
   "repository": {
     "type": "git",
