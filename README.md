@@ -11,6 +11,12 @@ and, can even crash or explode the rocket! (maybe later) <br/>
 ```js
 var rl = require('rocket-launcher');
 
+//print figlet text (16 = about 1 second)
+rl.type("Rocket!", 16);
+
+//count down
+rl.count(3);
+
 //when your app init
 rl.launch();
 ```
