@@ -1,18 +1,3 @@
 var rl = require('./launcher.js');
 
-
-
-rl.type("     ROCKET\n      ROCKS!", 16);
-setTimeout(function() {
-    rl.count(3);
-}, 1000)
-setInterval(function() {
-    rl.launch();
-}, 5000)
-
-
-// TO DO
-/*
-ms 단위로 글자 출력
-체인 연결 기능능
-*/
+rl.frame(16).type(" Rocket\n Launcher\n rocks!",100).delay(100).count(3).launch();

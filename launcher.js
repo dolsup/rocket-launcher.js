@@ -12,6 +12,7 @@ var fs = require('fs');
 var figlet = require('figlet');
 
 // variables
+var fps = 15;
 var cols = process.stdout.columns;
 var rows = process.stdout.rows;
 var buf = new Array(rows);
@@ -34,6 +35,7 @@ var Rocket = function(fire) {
 // figlet text prototype
 var Figlet = function(text, ms) {
     this.lines = figlet.textSync(text).split('\n');
+    this.birthms = Date.now();
     this.life = ms;
 };
 
@@ -41,7 +43,6 @@ var Figlet = function(text, ms) {
 // rocket subset into screen buffer
 // WHAT A DIRTY CODE
 var bufRocket = function(r) {
-    //clear();
     var data = r.lines;
     var lineNum = r.step++;
     var offset = Math.floor(cols/3 + Math.random()*3);
@@ -78,14 +79,16 @@ var bufFiglet = function(f) {
     }
 };
 
+
+var preScreen;
 // if not empty, print and clear the screen buffer
 var printBuf = function(bf) {
-    var empty = true;
+    var emptyBuffer = true;
     var t = "";
     for(var r=0; r<rows; r++) {
         for(var c=0; c<cols; c++) {
             if(bf[r][c]) {
-                empty = false;
+                emptyBuffer = false;
                 t += bf[r][c];
             } else {
                 t += ' ';
@@ -93,16 +96,18 @@ var printBuf = function(bf) {
             bf[r][c] = null;
         }
         t += '\n';
-    }    
-    if(!empty)
+    };
+    if(!emptyBuffer && preScreen != t) {
         process.stdout.write(t.toString('utf8')+'\n');
+    }
+    preScreen = t;
 };
 
 
 var tick = function(objs) {
     for(var i=0; i<objs.length; i++) {
         if(objs[i] instanceof Figlet) {
-            if(--objs[i].life < 0) {
+            if(objs[i].birthms + objs[i].life < Date.now()) {
                 objs.splice(i, 1);
                 break;
             }
@@ -121,7 +126,7 @@ var tick = function(objs) {
     printBuf(buf);
     setTimeout(function() {
         tick(objs);
-    }, 60);
+    }, 1000/fps);
 };
 
 var launch = function(rocket) {
@@ -145,7 +150,7 @@ var throwErr = function(msg) {
 
 // ---- functions for external access
 
-var LaunchRocket = function(path, fire) {
+var launchRocket = function(path, fire) {
     fs.readFile((path)?path:(__dirname + '/rocket.txt'), 'utf8', function(err, data) {
         if(err) {
             throwErr('ROCKET NOT FOUND!');
@@ -166,19 +171,67 @@ var makeFigletText = function(text, ms) {
 
 var countDown = function(n) {
     var timer = setInterval(function() {
-        makeFigletText(n--, 16);
+        makeFigletText(n--, 1000);
         if(n < 0) {
-            makeFigletText("FIRE", 16);
+            makeFigletText("FIRE", 1000);
             clearInterval(timer);
         }
     }, 1000);
 };
 
+var setFrame = function(f) {
+    fps = f;
+};
+
 // entry point
 tick(objects);
 
-module.exports = {
-    'launch': LaunchRocket,
+// chain implementation
+var rl = function() {
+    var queue = [];
+    var timer;
+    this.delay = function(per) {
+        timer = setTimeout(function() {
+            timer = 0;
+            var f;
+            while (f = queue.shift()) f();
+        }, per);
+        return this;
+    };
+    this.addFunction = function(f) {
+        if (timer) queue.push(f);
+        else f();
+        return this;
+    };
+    this.launch = function() {
+        if (timer) queue.push(launchRocket);
+        else launchRocket;
+        return this;
+    };
+    this.type = function(text, ms) {
+        if (timer) queue.push(makeFigletText(text, ms));
+        else makeFigletText(text, ms);
+        return this;
+    }
+    this.count = function(n) {
+        this.delay((n+1)*1000);
+        if (timer) queue.push(countDown(n));
+        else countDown(n);
+        return this;
+    }
+    this.frame = function(f) {
+        if (timer) queue.push(setFrame(f));
+        else setFrame(f)
+        return this;
+    }
+}
+
+/*module.exports = {
+    'launch': launchRocket,
     'type': makeFigletText,
-    'count': countDown
-};
+    'count': countDown,
+    'frame': setFrame,
+    'rl': rl
+};*/
+
+module.exports = new rl();
