@@ -25,8 +25,8 @@ var cend = "\u001B[0m";
 
 
 // rocket prototype
-var Rocket = function(fire) {
-    this.lines = [];
+var Rocket = function(data, fire) {
+    this.lines = data.split('\n');
     this.state = ""; //launched, exploded, crashed
     this.step = 0;
     this.fire = fire;
@@ -132,6 +132,7 @@ var tick = function(objs) {
 var launch = function(rocket) {
     rocket.state = 'launched';
     rocket.step = 0;
+    return rocket;
 };
 
 /*
@@ -151,17 +152,11 @@ var throwErr = function(msg) {
 // ---- functions for external access
 
 var launchRocket = function(path, fire) {
-    fs.readFile((path)?path:(__dirname + '/rocket.txt'), 'utf8', function(err, data) {
-        if(err) {
-            throwErr('ROCKET NOT FOUND!');
-        } else {
-            var rocket = new Rocket((fire)?fire:'#');
-            rocket.lines = data.split('\n');
-            launch(rocket);
-            objects.push(rocket);    
-        }
-        //setInterval(function() {launch(rocket);}, 3500);
-    });
+/*    if(!data) {
+        throwErr('ROCKET NOT FOUND!');
+    }*/
+    var rocket = launch(new Rocket((path)?path:(fs.readFileSync((path)?path:(__dirname + '/rocket.txt'), 'utf8')), (fire)?fire:'#'));
+    objects.push(rocket);    
 };
 
 var makeFigletText = function(text, ms) {    
@@ -203,7 +198,7 @@ var rl = function() {
         else f();
         return this;
     };
-    this.launch = function() {
+    this.launch = function(path, fire) {
         if (timer) queue.push(launchRocket);
         else launchRocket;
         return this;
@@ -214,10 +209,9 @@ var rl = function() {
         return this;
     }
     this.count = function(n) {
-        this.delay((n+1)*1000);
         if (timer) queue.push(countDown(n));
         else countDown(n);
-        return this;
+        return this.delay((n+1)*1000);
     }
     this.frame = function(f) {
         if (timer) queue.push(setFrame(f));

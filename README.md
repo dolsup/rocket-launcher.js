@@ -1,4 +1,5 @@
 # rocket-launcher.js
+[DEMO ANIMATION](./demo.gif) <br/>
 launch your meaningful Node.js app with this ROCKET-LAUNCHER! <br/>
 rocket-launcher will launch a huge ASCII rocket. <br/>
 and, can even crash or explode the rocket! (maybe later) <br/>
@@ -7,7 +8,7 @@ and, can even crash or explode the rocket! (maybe later) <br/>
 # NEW!
 - mathod chaining with `delay(millisecond)` method
 - use millisecond unit for methods
-- no print if it's same previous screen buffer
+- it doesn't print if it's same previous screen buffer
 - set fps(frames per second) with `frame(default=16)` method
 
 # installation
@@ -29,6 +30,9 @@ rl.count(3);
 
 //fire a rocket
 rl.launch();
+
+//you can also launch your own rocket
+rl.launch()
 ```
 and watch the rocket.
 
