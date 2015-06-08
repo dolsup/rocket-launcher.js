@@ -1,5 +1,5 @@
 # rocket-launcher.js
-[DEMO ANIMATION](./demo.gif) <br/>
+![DEMO ANIMATION](./demo.gif) <br/>
 launch your meaningful Node.js app with this ROCKET-LAUNCHER! <br/>
 rocket-launcher will launch a huge ASCII rocket. <br/>
 and, can even crash or explode the rocket! (maybe later) <br/>
