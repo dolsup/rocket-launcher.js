@@ -30,9 +30,6 @@ rl.count(3);
 
 //fire a rocket
 rl.launch();
-
-//you can also launch your own rocket
-rl.launch()
 ```
 and watch the rocket.
 
